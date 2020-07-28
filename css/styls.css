@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    background-color: #e2e2e2;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.content {
+    width: 400px;
+    box-shadow: -1px 0px 10px -1px rgba(168, 163, 168, 1);
+    background: white;
+    margin-top: 32px;
+}
+
+.form {
+    padding: 24px;
+}
+
+.itemform {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 4px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: hsl(9, 39%, 49%);
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    background-color: #ad6c61;
+}
+
+.tweets {
+    padding: 24px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.tweet {
+    margin-top: 8px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.icons {
+    height: 20px;
+}
+
+.icons img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.liked {
+    background-color: red;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
